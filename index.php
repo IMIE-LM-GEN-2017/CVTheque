@@ -1,14 +1,16 @@
+<?php
+session_start();
+include_once 'config/dbconnect.php';
+?>
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title> CV'Théque</title>
-  </head>
-  <body>
-<p> Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
-  </body>
-  <?php
-    require_once("./menu.php");
-    $menu = affiche_menu();
-?>
+<head>
+	<title>CV'Théque</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" >
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+</head>
+<body>
+<?php include('page/navbar.php'); ?>
+
+</body>
 </html>
