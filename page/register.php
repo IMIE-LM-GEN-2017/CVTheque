@@ -6,8 +6,6 @@ if(isset($_SESSION['usr_id'])) {
 }
 
 include_once '../config/dbconnect.php';
-include('navbar.php');
-include('page/header.php');
 
 //set validation error flag as false
 $error = false;
@@ -47,6 +45,7 @@ if (isset($_POST['signup'])) {
 ?>
 
 <!DOCTYPE html>
+<?php include('header.php'); ?>
 <html>
 <head>
 	<title>User Registration Script</title>
@@ -54,6 +53,7 @@ if (isset($_POST['signup'])) {
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 </head>
 <body>
+	<?php include('navbar.php'); ?>
 <div class="container">
 	<div class="row">
 		<div class="col-md-4 col-md-offset-4 well">

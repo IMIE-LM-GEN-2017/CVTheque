@@ -13,10 +13,10 @@
 			<ul class="nav navbar-nav navbar-right">
 				<?php if (isset($_SESSION['usr_id'])) { ?>
 				<li><p class="navbar-text">Connecter avec <?php echo $_SESSION['usr_name']; ?></p></li>
-				<li><a href="page/logout.php">Se déconnectez</a></li>
+				<li><a href="logout.php">Se déconnectez</a></li>
 				<?php } else { ?>
-				<li><a href="page/login.php">Se connecter</a></li>
-				<li><a href="page/register.php">S'enregistrer</a></li>
+				<li><a href="login.php">Se connecter</a></li>
+				<li><a href="register.php">S'enregistrer</a></li>
 				<?php } ?>
 			</ul>
 		</div>
