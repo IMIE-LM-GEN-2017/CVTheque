@@ -1,6 +1,11 @@
 <?php
-session_start();
-include_once 'config/dbconnect.php';
+// session_start();
+include_once 'includes/dbconnect.php';
+// Connexion à la base de données
+require_once('includes/fonction.php');
+// Définition titre page
+$titrepage="Liste des fermes";
+
 ?>
 <!DOCTYPE html>
 <html>

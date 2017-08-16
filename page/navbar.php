@@ -1,3 +1,10 @@
+<?php
+
+require_once('../includes/dbconnect.php');
+require_once('../includes/fonction.php');
+
+?>
+
 <nav class="navbar navbar-default" role="navigation">
 	<div class="container-fluid">
 		<div class="navbar-header">
