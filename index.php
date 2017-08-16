@@ -1,23 +1,17 @@
 <?php
-// session_start();
-include_once 'includes/dbconnect.php';
-// Connexion à la base de données
-require_once('includes/fonction.php');
-// Définition titre page
-$titrepage="Liste des fermes";
-
+session_start();
+//include_once 'config/dbconnect.php';
+require_once 'config/dbconnect.php';
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>CV'Théque</title>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport" >
-	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 </head>
 <body>
-<div class="">
 
-</div>
 <nav class="navbar navbar-default" role="navigation">
 	<div class="container-fluid">
 		<div class="navbar-header">
@@ -63,33 +57,35 @@ $titrepage="Liste des fermes";
     <div class="container">
       <div class="row">
         <div class="OurBlog">
-          <h4>Our Blog</h4>
-          <p>BCM wins mandate for Avendus Wealth Management portal revamp</p>
-          <div class="post-blog-date">20th Oct 2016</div>
+          <h4>VOTRE ÉCOLE INFORMATIQUE AU MANS</h4>
+          <p>FORMEZ-VOUS AU CŒUR DE LA FILIÈRE NUMÉRIQUE</p>
+          <div class="post-blog-date"></div>
         </div>
-        <div class=" col-lg-8 col-lg-offset-2">
+        <div class="col-lg-8 col-lg-offset-2">
           <div class="col-sm-4">
             <div class="footer-col-item">
-              <h4>Go Travel Cloud</h4>
-              <address>
-              501,507 your company address<br>
-              400015 Maharashtra, UK
-              </address>
+            	<img id="logoimie" src="img/imie.jpg" alt="LogoImie">
             </div>
           </div>
           <div class="col-sm-4">
             <div class="footer-col-item">
-              <h4>Contact</h4>
-              <div class="item-contact"> <a href="tel:630-885-9200"><span class="link-id">P</span>:<span>630-885-9200</span></a> <a href="tel:630-839.2006"><span class="link-id">F</span>:<span>630-839.2006</span></a> <a href="mailto:info@brandcatmedia.com"><span class="link-id">E</span>:<span>info@brandcatmedia.com</span></a> </div>
+              <h4>Nous Contacter</h4>
+              <div class="item-contact">
+								<a href="tel:02 43 75 82 23"><span class="link-id">Tel</span>:<span>02 43 75 82 23</span></a>
+								<a href="fax : 02 28 20 03 05"><span class="link-id">Fax</span>:<span>02 28 20 03 05</span></a>
+								<a href="mailto:contact-lemans@imie.fr"><span class="link-id">Email</span>:<span>contact-lemans@imie.fr</span></a>
+							</div>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="footer-col-item">
-              <h4>Sign up for Newsletter</h4>
-              <form class="signUpNewsletter" action="" method="get">
-                <input name="" class="gt-email form-control" placeholder="You@youremail.com" type="text">
-                <input name="" class="btn-go" value="Go" type="button">
-              </form>
+              <h4>Notre Adresse</h4>
+								<p>IMIE Le Mans<br>
+								Centre d’affaires Novaxis<br>
+								75 bd Marie et Alexandre Oyon<br>
+								(3 étage)<br>
+								72100 LE MANS </p>
+
             </div>
           </div>
         </div>
@@ -97,8 +93,8 @@ $titrepage="Liste des fermes";
     </div>
   </div>
   <div class="footer-bottom-layout">
-    <div class="socialMedia-footer"> <a href="#"><img src="img/socialMedia_01.png"></a> <a href="#"><img src="img/socialMedia_02.png"></a> <a href="#"><img src="img/socialMedia_03.png"></a> <a href="#"><img src="img/socialMedia_04.png"></a> <a href="#"><img src="img/socialMedia_05.png"></a> </div>
-    <div class="copyright-tag">Copyright © 2017 company name. All Rights Reserved.</div>
+
+    <div class="copyright-tag">Copyright © </div>
   </div>
 </footer>
 
