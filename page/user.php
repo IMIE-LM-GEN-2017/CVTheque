@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
+
 </head>
 <body>
   <?php include('navbar.php'); ?>
@@ -18,9 +18,7 @@
       <div class="row">
   </div>
       <div class="panel panel-default">
-          <div class="panel-heading">
-              <b>Tableau de Bord</b>
-          </div>
+
           <div class="panel-body">
               <ul class="nav nav-pills">
                   <li class="active"><a href="#home-pills" data-toggle="tab">Accueil</a>
@@ -35,7 +33,7 @@
               <div class="tab-content">
                   <div class="tab-pane fade in active" id="home-pills">
                       <h4>Home Tab</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      <p>Bienvenue sur votre profile, n'hésitez pas a mettre a jour vos CV's et vos disponibilités constament.</p>
                   </div>
                   <div class="tab-pane fade" id="profile-pills">
                       <h4>Profile Tab</h4>
@@ -204,10 +202,10 @@
         <br/>
       </div>
       <div class="well">
-        <?php echo "SELECT * FROM user 'name'";  ?>
-        <?php echo "SELECT * FROM user 'name'";  ?>
-        <?php echo "SELECT * FROM user 'name'";  ?>
-        <?php echo "SELECT * FROM user 'name'"; ?>
+        <p> Nom </p>
+        <p> Prénom </p>
+        <p> Adresse e-mail </p>
+        <p> Numéro de Téléphone </p>
       </div>
 
       <div class="well">
@@ -258,7 +256,7 @@
           </div>
         </div>
       </div>
-    <div class="col-sm-6 well">
+    <div class="col-sm-11 well">
       <div class="thumbnail">
         <p>Les évenement a venir:</p>
         <img src="paris.jpg" alt="Paris" width="400" height="300">

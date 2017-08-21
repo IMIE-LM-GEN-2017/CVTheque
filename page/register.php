@@ -87,6 +87,7 @@ if (isset($_POST['signup'])) {
 			<span class="text-success"><?php if (isset($successmsg)) { echo $successmsg; } ?></span>
 			<span class="text-danger"><?php if (isset($errormsg)) { echo $errormsg; } ?></span>
 		</div>
+		
 	</div>
 	<div class="row">
 		<div class="col-md-4 col-md-offset-4 text-center">

@@ -25,9 +25,12 @@ require_once 'includes/dbconnect.php';
 		</div>
 		<div class="collapse navbar-collapse" id="navbar1">
 			<ul class="nav navbar-nav navbar-right">
+				<li><a href="admins/index.php">Admin</a></li>
+				<li><a href="page/user.php">Utilisateurs</a></li>
+				<li><a href="admins/edituser.php">Modification d'utilisateur</a></li>
 				<?php if (isset($_SESSION['usr_id'])) { ?>
 				<li><p class="navbar-text">Connecter avec <?php echo $_SESSION['usr_name']; ?></p></li>
-				<li><a href="page/logout.php">Se déconnectez</a></li>
+				<li><a href="logout.php">Se déconnectez</a></li>
 				<?php } else { ?>
 				<li><a href="page/login.php">Se connecter</a></li>
 				<li><a href="page/register.php">S'enregistrer</a></li>

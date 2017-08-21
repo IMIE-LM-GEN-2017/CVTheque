@@ -18,6 +18,9 @@ require_once('../includes/fonction.php');
 		</div>
 		<div class="collapse navbar-collapse" id="navbar1">
 			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../admins/index.php">Admin</a></li>
+				<li><a href="../admins/edituser.php">Modification d'utilisateur</a></li>
+				<li><a href="user.php">Utilisateurs</a></li>
 				<?php if (isset($_SESSION['usr_id'])) { ?>
 				<li><p class="navbar-text">Connecter avec <?php echo $_SESSION['usr_name']; ?></p></li>
 				<li><a href="logout.php">Se déconnectez</a></li>

@@ -89,7 +89,7 @@ include '../page/header.php';
                                    </div>
                                    <button type="submit" class="btn btn-default label-success">Modifier</button>
                                    <button type="reset" class="btn btn-default label-warning">Reset les information</button>
-                                   <button type="button" class="btn btn-default label-danger"><span class="glyphicon glyphicon-trash"></span>Supprimer ce compte</button>
+                                   <button type="button" class="btn btn-default label-danger "><span class="glyphicon-trash"></span>Supprimer ce compte</button>
                                </form>
                            </div>
                            <!-- /.col-lg-6 (nested) -->
