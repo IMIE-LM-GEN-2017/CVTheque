@@ -67,9 +67,9 @@
                       </p>
                   </div>
                   <div class="tab-pane fade" id="messages-pills">
-                      <h4>Messages Tab</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  </div>
+                      <h4>Lise des CV</h4>
+
+                      </div>
                   <div class="tab-pane fade" id="settings-pills">
                       <h4>Paramétres</h4>
                       <p>  <div class="row">
@@ -279,9 +279,7 @@
 
 
 </div>
-<footer class="container-fluid text-center">
-  <p>Notre Footer</p>
-</footer>
+<?php include('footer.php'); ?>
 
 </body>
 </html>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 //include_once 'config/dbconnect.php';
-require_once 'config/dbconnect.php';
+require_once 'includes/dbconnect.php';
 ?>
 <!DOCTYPE html>
 <html>
