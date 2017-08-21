@@ -6,14 +6,15 @@ $titrepage="Login";
 // Headers html; <head> + titres
 include ('navbar.php');
 include ('header.php');
+include ('../includes/fonction.php');
 
 $erreur=false;
 $succes=false;
 if (verificationformulaire(['email','password']) ===true) {
   $sql="SELECT * FROM user"
-        ." WHERE email='"
+        ."WHERE email="
         .mysqli_real_escape_string($connection,$_POST['email'])
-        ."'AND mdp='"
+        "AND mdp="
         .mysqli_real_escape_string($connection,md5($_POST['password']))
         ."'";
       $resultats= executerRequete($connection,$sql);

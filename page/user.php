@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php include('header.php'); ?>
-<html lang="en">
+<html lang="fr">
 <head>
   <title>CV'Theque</title>
   <meta charset="utf-8">
@@ -8,14 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-    }
-  </style>
+  
 </head>
 <body>
   <?php include('navbar.php'); ?>
