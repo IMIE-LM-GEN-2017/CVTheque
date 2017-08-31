@@ -54,8 +54,6 @@ include ('header.php');
 						<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
 						<input  type="password" class="form-control" name="Mot de Passe" placeholder="Mot de Passe">
 					</div>
-                    <span class="help-block">Erreur dans le Mot De Passe</span>
-
 					<button class="btn btn-lg btn-primary btn-block" type="submit"><i class="fa fa-sign-in"></i> Se connecter</button>
 				</form>
 			</div>

@@ -1,11 +1,11 @@
 <?php
 
 include('navbar.php');
-include('header.php');
+
 
 //set validation error flag as false
 $error = false;
-
+$titrePage ="S'enregistrer";
 //check if form is submitted
 if (isset($_POST['signup'])) {
 	$name = mysqli_real_escape_string($con, $_POST['name']);
@@ -16,7 +16,7 @@ if (isset($_POST['signup'])) {
 	//name can contain only alpha characters and space
 	if (!preg_match("/^[a-zA-Z ]+$/",$name)) {
 		$error = true;
-		$name_error = "Name must contain only alphabets and space";
+		$name_error = "Votre nom ne doit pas contenir de charactéres spéciaux et des chiffres";
 	}
 	if(!filter_var($email,FILTER_VALIDATE_EMAIL)) {
 		$error = true;
@@ -38,6 +38,7 @@ if (isset($_POST['signup'])) {
 		}
 	}
 }
+include('header.php');
 ?>
 
 <!DOCTYPE html>
@@ -87,7 +88,7 @@ if (isset($_POST['signup'])) {
 			<span class="text-success"><?php if (isset($successmsg)) { echo $successmsg; } ?></span>
 			<span class="text-danger"><?php if (isset($errormsg)) { echo $errormsg; } ?></span>
 		</div>
-		
+
 	</div>
 	<div class="row">
 		<div class="col-md-4 col-md-offset-4 text-center">
