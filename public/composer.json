@@ -1,7 +1,0 @@
-{
-    "require": {
-        "laravel/laravel": "^5.4",
-        "twbs/bootstrap": "^3.3",
-        "semantic/ui": "^2.2"
-    }
-}

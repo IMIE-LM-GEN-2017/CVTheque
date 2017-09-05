@@ -1,116 +1,60 @@
 <?php
-session_start();
-//include_once 'config/dbconnect.php';
-require_once 'includes/dbconnect.php';
-?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>CV'Théque</title>
-	<meta content="width=device-width, initial-scale=1.0" name="viewport" >
-	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-</head>
-<body>
 
-<nav class="navbar navbar-default" role="navigation">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar1">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="index.php">CV'Theque</a>
-		</div>
-		<div class="collapse navbar-collapse" id="navbar1">
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="admins/index.php">Admin</a></li>
-				<li><a href="page/user.php">Utilisateurs</a></li>
-				<li><a href="admins/edituser.php">Modification d'utilisateur</a></li>
-				<?php if (isset($_SESSION['usr_id'])) { ?>
-				<li><p class="navbar-text">Connecter avec <?php echo $_SESSION['usr_name']; ?></p></li>
-				<li><a href="logout.php">Se déconnectez</a></li>
-				<?php } else { ?>
-				<li><a href="page/login.php">Se connecter</a></li>
-				<li><a href="page/register.php">S'enregistrer</a></li>
-				<?php } ?>
-			</ul>
-		</div>
-	</div>
-</nav>
+/**
+ * Laravel - A PHP Framework For Web Artisans
+ *
+ * @package  Laravel
+ * @author   Taylor Otwell <taylor@laravel.com>
+ */
 
-<div class="head-bg">
-  <div class="head-bg-img"></div>
-  <div class="head-bg-content">
-    <div
-    class="col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-4 col-xs-offset-4 col-xs-6">
-      <input class="form-control" type="text" placeholder="Recherche de cv">
-      <br>
-      <div><button type="submit" class="btn btn-primary">Soumettre</button></div>
-    </div>
-    </div>
-  </div>
-</div>
+define('LARAVEL_START', microtime(true));
 
-																		<!-- A MODIFIER -->
+/*
+|--------------------------------------------------------------------------
+| Register The Auto Loader
+|--------------------------------------------------------------------------
+|
+| Composer provides a convenient, automatically generated class loader for
+| our application. We just need to utilize it! We'll simply require it
+| into the script here so that we don't have to worry about manual
+| loading any of our classes later on. It feels great to relax.
+|
+*/
 
-<footer id="footer-Section">
-  <div class="footer-top-layout">
-    <div class="container">
-      <div class="row">
-        <div class="OurBlog">
-          <h4>VOTRE ÉCOLE INFORMATIQUE AU MANS</h4>
-          <p>FORMEZ-VOUS AU CŒUR DE LA FILIÈRE NUMÉRIQUE</p>
-          <div class="post-blog-date"></div>
-        </div>
-        <div class="col-lg-8 col-lg-offset-2">
-          <div class="col-sm-4">
-            <div class="footer-col-item">
-            	<img id="logoimie" src="img/imie.jpg" alt="LogoImie">
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="footer-col-item">
-              <h4>Nous Contacter</h4>
-              <div class="item-contact">
-								<a href="tel:02 43 75 82 23"><span class="link-id">Tel</span>:<span>02 43 75 82 23</span></a>
-								<a href="fax : 02 28 20 03 05"><span class="link-id">Fax</span>:<span>02 28 20 03 05</span></a>
-								<a href="mailto:contact-lemans@imie.fr"><span class="link-id">Email</span>:<span>contact-lemans@imie.fr</span></a>
-							</div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="footer-col-item">
-              <h4>Notre Adresse</h4>
-								<p>IMIE Le Mans<br>
-								Centre d’affaires Novaxis<br>
-								75 bd Marie et Alexandre Oyon<br>
-								(3 étage)<br>
-								72100 LE MANS </p>
+require __DIR__.'/../vendor/autoload.php';
 
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom-layout">
+/*
+|--------------------------------------------------------------------------
+| Turn On The Lights
+|--------------------------------------------------------------------------
+|
+| We need to illuminate PHP development, so let us turn on the lights.
+| This bootstraps the framework and gets it ready for use, then it
+| will load up this application so that we can run it and send
+| the responses back to the browser and delight our users.
+|
+*/
 
-    <div class="copyright-tag">Copyright © </div>
-  </div>
-</footer>
+$app = require_once __DIR__.'/../bootstrap/app.php';
 
+/*
+|--------------------------------------------------------------------------
+| Run The Application
+|--------------------------------------------------------------------------
+|
+| Once we have the application, we can handle the incoming request
+| through the kernel, and send the associated response back to
+| the client's browser allowing them to enjoy the creative
+| and wonderful application we have prepared for them.
+|
+*/
 
+$kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 
+$response = $kernel->handle(
+    $request = Illuminate\Http\Request::capture()
+);
 
+$response->send();
 
-
-
-
-    <script
-    src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script
-    src="js/bootstrap.min.js"></script>
-  </body>
-</html>
+$kernel->terminate($request, $response);
