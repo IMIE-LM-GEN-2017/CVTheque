@@ -1,6 +1,6 @@
 <nav class="navbar ">
     <div class="navbar-brand">
-        <a class="navbar-item" href="{{ url('/') }}"><strong>Blog321</strong></a>
+        <a class="navbar-item" href="{{ url('/') }}"><strong>CV'Theque</strong></a>
         <div class="navbar-burger burger" data-target="navMenubd">
             <span></span>
             <span></span>

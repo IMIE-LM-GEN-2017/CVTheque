@@ -1,5 +1,5 @@
 @if(Auth::guest())
-    <a class="navbar-item" href="{{ route('login') }}">Login</a>
+    <a class="navbar-item" href="{{ route('login') }}">Se connecter</a>
     <a class="navbar-item" href="{{ route('register') }}">Inscription</a>
 @else
     <div class="navbar-item has-dropdown is-hoverable">

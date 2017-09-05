@@ -1,6 +1,6 @@
 <nav class="navbar ">
     <div class="navbar-brand">
-        <a class="navbar-item" href="{{ url('/') }}">Blog321</a>
+        <a class="navbar-item" href="{{ url('/') }}">CV'Theque</a>
         <div class="navbar-burger burger" data-target="navMenubd">
             <span></span>
             <span></span>
@@ -21,15 +21,3 @@
         </div>
     </div>
 </nav>
-
-
-
-
-
-
-
-
-
-
-
-
