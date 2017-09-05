@@ -1,31 +1,24 @@
 @extends('templates.default')
 
-@section('title', 'Liste des posts')
+
 
 @section('content')
-    <div class="columns is-multiline">
-        @if(count($posts) === 0)
-            <div class="message is-info">
-                <div class="message-body">
-                    Il n'y a pas encore d'articles. Revenez plus tard..;
+
+    <div class="head-bg">
+        <div class="head-bg-img"></div>
+        <div class="head-bg-content">
+            <div
+                    class="col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-4 col-xs-offset-4 col-xs-6">
+                <input class="form-control" type="text" placeholder="Recherche de cv">
+                <br>
+                <div>
+                    <button type="submit" class="btn btn-primary">Soumettre</button>
                 </div>
             </div>
-        @endif
-        @foreach($posts as $post)
-            <div class="column is-one-quarter">
-                <div class="card">
-                    <header class="card-header">
-                        <p class="card-header-title">
-                            <a href="{{route('PostShow', ['id'=>$post->id])}}">{{$post->title}}</a>
-                        </p>
-                    </header>
-                    <div class="card-content">
-                        <div class="content">
-                            <small>{{$post->created_at}}</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        @endforeach
+        </div>
     </div>
+
+@include('templates.footer')
+
 @endsection
+
