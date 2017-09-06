@@ -10,8 +10,7 @@
         		<div class="col-md-4 col-md-offset-4 well">
               <div class="form-group">
                 <label for="pseudo">Pseudo</label>
-                <label for="name">Nom</label>
-                <input type="text" name="name" placeholder="Entrez Votre Nom" required value="{{ old('pseudo') }}" class="form-control" />
+                <input type="text" name="pseudo" placeholder="Entrez Votre Nom" required value="{{ old('pseudo') }}" class="form-control" />
                 @if ($errors->has('pseudo'))
                     <strong>{{ $errors->first('pseudo') }}</strong>
                 @endif
@@ -25,14 +24,14 @@
     					</div>
               <div class="form-group">
     						<label for="name">Mot de Passe</label>
-    						<input id="password" name="password" placeholder="Mot de Passe" required class="form-control" />
+    						<input type="password" name="password" placeholder="Mot de Passe" required class="form-control" />
                 @if ($errors->has('password'))
                     <strong>{{ $errors->first('password') }}</strong>
                 @endif
     					</div>
               <div class="form-group">
     						<label for="password-confirm">Confirmer Mot de Passe</label>
-    						<input id="password-confirm" type="password" placeholder="Confirmation" name="password_confirmation" required class="form-control"/>
+    						<input type="password" type="password" placeholder="Confirmation" name="password_confirmation" required class="form-control"/>
                 @if ($errors->has('password'))
                     <strong>{{ $errors->first('password') }}</strong>
                 @endif
