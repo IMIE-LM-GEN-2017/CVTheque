@@ -16,6 +16,12 @@
         {{var_dump($user->created_at)}}
         {{var_dump($user->updated_at)}}
     </pre>
+    
     <h2 class="title">Articles</h2>
     <p>Ici, la liste des articles</p>
+    <body>
+  <!-- Header Plusieurs Pages -->
+
+
+
 @endsection
