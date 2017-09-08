@@ -26,7 +26,7 @@ class RegisterController extends Controller {
 	 */
 
 	use ActivationTrait;
-	use CaptchaTrait;
+
 	use RegistersUsers;
 
 	/**
@@ -55,7 +55,7 @@ class RegisterController extends Controller {
 	 */
 	protected function validator(array $data) {
 
-		$data['captcha'] = $this->captchaCheck();
+
 
 		if (!config('settings.reCaptchStatus')) {
 			$data['captcha'] = true;
