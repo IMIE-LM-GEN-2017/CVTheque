@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mandure</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<title>CV'THEQUE</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
@@ -18,11 +19,11 @@
     </div>
     <div class="nav navbar-nav navbar-right">
         @if (Auth::guest())
-            <!--<li><a href="{{ URL::route('auth/register') }}">Register</a></li>-->
-            <li><a href="{{ URL::route('auth/login') }}" style="color: #fbfbfb;">Ingresar</a></li>
+            {{-- <li><a href="{{ URL::route('auth/register') }}">Register</a></li> --}}
+            <li><a href="{{ URL::route('auth/login') }}" style="color: #fbfbfb;">Se connecter</a></li>
         @elseif(Auth::user()->name === 'Demo User')
             <li><a href="{{ route('poders.index') }}" style="color: #fbfbfb;">Poder especial</a></li>
-            <li><a href="{{ URL::route('auth/logout') }}" style="color: #fbfbfb;">Hola, {{{ Auth::user()->name}}} (Cerrar sesion)</a></li>
+            <li><a href="{{ URL::route('auth/logout') }}" style="color: #fbfbfb;">Bonjour, {{{ Auth::user()->name}}} (Cerrar sesion)</a></li>
         @else
             <li><a href="{{ route('home') }}" style="color: #fbfbfb;">Acceuil</a></li>
             <li><a href="{{ route('tasks.index') }}" style="color: #fbfbfb;">Tâche</a></li>

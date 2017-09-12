@@ -19,7 +19,7 @@ class DocumentsController extends Controller
      */
     public function index()
     {
-        
+
         $documents = Document::orderBy('company')->get();
 
         return view('documents.index')->withDocuments($documents);
@@ -47,7 +47,7 @@ class DocumentsController extends Controller
             'company' => 'required',
             'owner' => 'required'
         ]);
-        
+
         $input = $request->all();
 
         Document::create($input);
@@ -55,7 +55,7 @@ class DocumentsController extends Controller
         Session::flash('flash_message', 'Document successfully added!');
 
         return redirect()->back();
-        
+
     }
 
     /**
@@ -94,18 +94,18 @@ class DocumentsController extends Controller
     public function update(Request $request, $id)
     {
         $document = Document::findOrFail($id);
-    
+
         $this->validate($request, [
             'company' => 'required',
             'owner' => 'required'
         ]);
-    
+
         $input = $request->all();
-    
+
         $document->fill($input)->save();
-    
+
         Session::flash('flash_message', 'Document successfully updated!');
-    
+
         return redirect()->back();
     }
 
@@ -120,12 +120,12 @@ class DocumentsController extends Controller
         $document = Document::findOrFail($id);
 
         $document->delete();
-    
+
         Session::flash('flash_message', 'Document successfully deleted!');
-    
+
         return redirect()->route('Documents.index');
     }
-    
+
      /**
      * Generate doc and download.
      *
@@ -137,13 +137,13 @@ class DocumentsController extends Controller
         $document = Document::findOrFail($id);
         $phpWord = new PhpWord();
         $template= public_path(). "/download/template.docx";
-        $file= public_path(). "/download/result.docx";
+        $file= public_path(). "/download/cv.docx";
         $download = $phpWord->loadTemplate($template);
         $download->setValue('COMPANY', $document->company);
         $download->setValue('OWNER', $document->owner);
         $download->saveAs($file);
         $headers = array('Content-Type: application/docx',
                 );
-        return response()->download($file, 'result.docx', $headers);
+        return response()->download($file, 'cv.docx', $headers);
     }
 }

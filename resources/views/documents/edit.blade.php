@@ -3,7 +3,7 @@
 @section('content')
 
 <h1>Editing "{{ $document->company }}"</h1>
-<p class="lead">Edit and save this document below, or <a href="{{ route('documents.index') }}">go back to all Documents.</a></p>
+<p class="lead">Editer et sauvegarder le CV, ou <a href="{{ route('documents.index') }}">retournez a la liste ...</a></p>
 <hr>
 
 @include('partials.alerts.errors')
@@ -14,12 +14,12 @@
 ]) !!}
 
 <div class="form-group">
-    {!! Form::label('company', 'Company:', ['class' => 'control-label']) !!}
+    {!! Form::label('company', 'Titre du CV:', ['class' => 'control-label']) !!}
     {!! Form::text('company', null, ['class' => 'form-control']) !!}
 </div>
 
 <div class="form-group">
-    {!! Form::label('owner', 'Owner:', ['class' => 'control-label']) !!}
+    {!! Form::label('owner', 'Nom de l\'apprenant:', ['class' => 'control-label']) !!}
     {!! Form::text('owner', null, ['class' => 'form-control']) !!}
 </div>
 
