@@ -94,11 +94,11 @@
                             </div>
                         </div>
 
-                        <p class="text-center margin-bottom-2">
+                        {{-- <p class="text-center margin-bottom-2">
                             Or Use Social Logins to Register
-                        </p>
-
-                        @include('partials.socials')
+                        </p> --}}
+                        {{-- Bientot le login avec les sociaux --}}
+                        {{-- @include('partials.socials') --}}
 
                     {!! Form::close() !!}
 
