@@ -57,6 +57,28 @@
             </div>
 @endif
 
+<div class="ui cards">
+  <div class="ui fluid card">
+    <div class="content">
+      <img class="left floated small ui image" src="images/avatar.png">
+      <div class="header">
+        {{{ Auth::user()->name}}}
+      </div>
+      <div class="meta">
+        Friends of Veronika
+      </div>
+      <div class="description">
+        Elliot requested permission to view your contact details
+      </div>
+    </div>
+    <div class="extra content">
+      <div class="ui two buttons">
+        <div class="ui basic green large button">Disponible</div>
+        <div class="ui basic red large button">Indisponible</div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 @yield('content')
