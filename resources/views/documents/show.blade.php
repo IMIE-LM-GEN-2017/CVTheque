@@ -5,11 +5,14 @@
 <div class="ui cards">
   <div class="ui fluid card">
     <div class="content">
-      <img class="right floated mini ui image" src="/images/avatar/large/elliot.jpg">
-      <div class="header">{{$document->Metiers}}</div>
+      <img class="small right floated mini ui image" src="public/images/evan.png">
+      <div class="header">{{$document->nomprenom}}</div>
       <div class="meta">Date : {{$document->created_at}} </div>
-      <div class="description">{{$document->nomprenom}}<hr> </div>
-      <div class="description"><i class="add to calendar icon"></i>{{$document->formation}}<hr> </div>
+      <div class="description">{{$document->Metiers}}<hr> </div>
+      <div class="description"><i class="large add to calendar icon"></i><b>Les Formations :</b> <br> <br>- {{$document->formation}}<hr> </div>
+      <div class="description"><i class="large add to calendar icon"></i><b>Les Expériences :</b> <br> <br>- {{$document->experiences}}<hr> </div>
+      <div class="description"><i class="large add to calendar icon"></i><b>Les Compétences :</b> <br> <br>- {{$document->compétences}}<hr> </div>
+      <div class="description"><i class="large add to calendar icon"></i><b>Les Langues : </b> <br><br>- {{$document->langues}}<hr> </div>
     </div>
     <p></p>
     <div class="extra content">

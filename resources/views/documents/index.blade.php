@@ -3,8 +3,9 @@
 @section('content')
 
 <h1>Liste des CV</h1>
-<p class="lead">Vous retrouverez tout les CV ci-dessous <a href="{{ route('documents.create') }}">En ajoutez un?</a></p>
-<hr>
+
+<a href="{{ route('documents.create') }}" class="btn btn-success"><i class="plus icon"></i>Ajouter un CV</a>
+
 
 @foreach($documents as $document)
     <h3>{{ $document->company }}</h3>
