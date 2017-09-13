@@ -7,7 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class Document extends Model
 {
         protected $fillable = [
-        'cv',
-        'nomprenom'
+        'nomprenom',
+        'Metiers',
+        'compétences',
+        'formation',
+        'experiences',
+        'langues'
     ];
 }
