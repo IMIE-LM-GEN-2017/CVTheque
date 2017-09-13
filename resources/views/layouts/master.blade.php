@@ -12,7 +12,7 @@
     <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 
 </head>
-<body>
+<body style="background-color: #f8f8f8;">
 
 
 <div class="ui menu">
@@ -48,6 +48,15 @@
 
     </div>
 </div>
+
+<main>
+    <div class="container">
+        @if(Session::has('flash_message'))
+            <div class="alert alert-success">
+                {{ Session::get('flash_message') }}
+            </div>
+@endif
+
 
 
 @yield('content')
