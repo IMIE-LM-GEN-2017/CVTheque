@@ -20,9 +20,9 @@ class DocumentsController extends Controller
     public function index()
     {
 
-        $documents = Document::orderBy('owner')->get();
+        $documents = Document::all();
 
-        return view('documents.index')->withDocuments($documents);
+        return view('documents.index',['documents' => $documents]);
     }
 
     /**
@@ -44,8 +44,12 @@ class DocumentsController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'cv' => 'required',
-            'nomprenom' => 'required'
+            'nomprenom' => 'required',
+            'Metiers' => 'required',
+            'compétences' => 'required',
+            'formation' => 'required',
+            'experiences' => 'required',
+            'langues' => 'required',
         ]);
 
         $input = $request->all();
@@ -96,9 +100,12 @@ class DocumentsController extends Controller
         $document = Document::findOrFail($id);
 
         $this->validate($request, [
-            'cv' => 'required',
-            'nomprenom' => 'required',
-            'compétences' => 'required',
+              'nomprenom' => 'required',
+              'Metiers' => 'required',
+              'compétences' => 'required',
+              'formation' => 'required',
+              'experiences' => 'required',
+              'langues' => 'required',
         ]);
 
         $input = $request->all();
