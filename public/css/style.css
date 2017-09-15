@@ -29,6 +29,14 @@ footer {
 
 }
 
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 250px;
+}
+
+
 /********   Search  **********/
 
 .head-bg {
