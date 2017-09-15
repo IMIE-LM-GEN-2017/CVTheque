@@ -10,7 +10,7 @@
             <div
                 class="col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-4 col-xs-offset-4 col-xs-6">
                 <div class="ui category search">
-                    <div class="ui icon input">
+                    <div class="ui icon massive input">
                         <input class="prompt" type="text" placeholder="Recherche de CV...">
                         <i class="search icon"></i>
                     </div>
