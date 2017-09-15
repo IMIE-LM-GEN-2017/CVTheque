@@ -22,10 +22,13 @@
                             <h4>Nous Contacter</h4>
                             <div class="item-contact">
                                 <a href="tel:02 43 75 82 23"><span
-                                            class="link-id">Tel</span>:<span>02 43 75 82 23</span></a>
+                                            class="link-id">Tel</span>:
+                                    <span>02 43 75 82 23</span></a>
                                 <a href="fax : 02 28 20 03 05"><span
-                                            class="link-id">Fax</span>:<span>02 28 20 03 05</span></a>
-                                <a href="mailto:contact-lemans@imie.fr"><span class="link-id">Email</span>:<span>contact-lemans@imie.fr</span></a>
+                                            class="link-id">Fax</span>:
+                                    <span>02 28 20 03 05</span></a>
+                                <a href="mailto:contact-lemans@imie.fr"><span class="link-id">Email</span>:
+                                    <span>contact-lemans@imie.fr</span></a>
                             </div>
                         </div>
                     </div>
@@ -46,10 +49,6 @@
         </div>
     </div>
 
-    <div class="footer-bottom-layout">
-
-        <div class="copyright-tag">Copyright ©</div>
-    </div>
 
 </footer>
 
