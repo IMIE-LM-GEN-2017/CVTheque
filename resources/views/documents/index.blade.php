@@ -20,8 +20,7 @@
             <a href="{{ route('documents.download', $document->id) }}" class="btn btn-success">Télécharger CV</a>
           </div>
         </div>
-        </div>
-?
+      </div>
     </p>
     <hr>
 @endforeach
