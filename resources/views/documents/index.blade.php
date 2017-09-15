@@ -8,8 +8,6 @@
 
 
 @foreach($documents as $document)
-    <h3>{{ $document->company }}</h3>
-    <p>{{ $document->owner}}</p>
     <p>
       <div class="ui cards">
         <div class="ui fluid card">
@@ -23,7 +21,7 @@
           </div>
         </div>
         </div>
-
+?
     </p>
     <hr>
 @endforeach

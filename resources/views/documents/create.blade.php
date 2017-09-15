@@ -48,7 +48,7 @@
     <h3>Compétences</h3>
     <div class="form-group">
         {!! Form::label('compétences', 'Compétences:', ['class' => 'control-label']) !!}
-        {!! Form::text('compétences', null, ['class' => 'form-control', 'placeholder'=>'Choisir une compétence']) !!}
+        {!! Form::text('compétences', null, ['class' => 'form-control']) !!}
     </div>
   </div>
   <div id="menu4" class="tab-pane fade">
