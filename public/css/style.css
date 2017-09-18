@@ -1,10 +1,3 @@
-body {
-    position: relative;}
-
-footer {
-    position: absolute;
-    bottom: 0; left: 0; right: 0}
-
 
 .ui.menu {
     font-size: 1.4rem;
@@ -29,20 +22,19 @@ footer {
 
 }
 
-
-.row {
-    margin-right: -15px;
-    margin-left: -15px;
+#login{
     margin-top: 250px;
 }
 
-
+#register{
+    margin-top: 250px;
+}
 /********   Search  **********/
 
 .head-bg {
     position: relative;
     padding: 10px;
-    margin-bottom: 50px;
+
 }
 
 .head-bg-img {
@@ -68,7 +60,6 @@ footer {
 }
 
 #content-block
-
 .head-bg-content .btn {
     margin-bottom: 10px;
 }
@@ -86,7 +77,6 @@ footer {
 .head-bg.style-3 {
     padding-top: 120px;
     padding-bottom: 120px;
-
 
 }
 
@@ -116,7 +106,8 @@ footer {
 .footer-top-layout {
     background: #1c1c1c none repeat scroll 0 0;
     color: #ffffff;
-
+    padding: 40px 0;
+    margin: auto;
 }
 
 .OurBlog {
@@ -147,6 +138,7 @@ footer {
 }
 
 .post-blog-date {
+    padding-bottom: 25px;
     position: relative;
 }
 
@@ -166,9 +158,6 @@ body {
 
 }
 
-.footer-top-layout {
-    color: #ffffff;
-}
 
 .footer-col-item {
     min-height: 140px;
@@ -180,12 +169,8 @@ address {
 
 .footer-top-layout [class*="col-sm-"]:last-child {
     border-right: medium none;
-
 }
 
-.footer-top-layout {
-    color: #ffffff;
-}
 
 body {
     color: #666666;
@@ -237,8 +222,7 @@ body {
 .footer-top-layout h4 {
     color: #ffffff;
     font-size: 18px;
-    margin-bottom: 8px;
-    margin-top: 8px;
+    margin-bottom: 21px;
 }
 
 .signUpNewsletter {
@@ -269,8 +253,14 @@ body {
 }
 
 .footer-bottom-layout {
-    margin-top: 80px;
+    background: #222222 none repeat scroll 0 0;
+    padding: 20px 0;
     text-align: center;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 24px;
 }
 
 .socialMedia-footer {

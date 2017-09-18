@@ -44,8 +44,7 @@
         @elseif(Auth::user()->name === 'Demo User')
 
         @else
-            <a class="item">Bonjour, {{{ Auth::user()->name}}}</a>
-            <a class="item" href="{{ route('home') }}">Acceuil</a>
+            <a class="item" href="{{ route('home') }}">Bonjour, {{{ Auth::user()->name}}}</a>
             <a class="item" href="{{ route('tasks.index') }}">Tâche</a>
             <a class="item" href="{{ route('documents.index') }}">Documents</a>
             <a class="item" href="{{ route('logout') }}"
