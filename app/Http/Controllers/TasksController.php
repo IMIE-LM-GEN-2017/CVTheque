@@ -18,7 +18,7 @@ class TasksController extends Controller
      */
     public function index()
     {
-            
+
         $tasks = Task::orderBy('title')->get();
 
         return view('tasks.index')->withTasks($tasks);
@@ -46,7 +46,7 @@ class TasksController extends Controller
             'title' => 'required',
             'description' => 'required'
         ]);
-        
+
         $input = $request->all();
 
         Task::create($input);
@@ -54,7 +54,7 @@ class TasksController extends Controller
         Session::flash('flash_message', 'Task successfully added!');
 
         return redirect()->back();
-        
+
     }
 
     /**
@@ -93,18 +93,18 @@ class TasksController extends Controller
     public function update($id, Request $request)
     {
         $task = Task::findOrFail($id);
-    
+
         $this->validate($request, [
             'title' => 'required',
             'description' => 'required'
         ]);
-    
+
         $input = $request->all();
-    
+
         $task->fill($input)->save();
-    
+
         Session::flash('flash_message', 'Task successfully updated!');
-    
+
         return redirect()->back();
     }
 
@@ -119,9 +119,9 @@ class TasksController extends Controller
         $task = Task::findOrFail($id);
 
         $task->delete();
-    
+
         Session::flash('flash_message', 'Task successfully deleted!');
-    
+
         return redirect()->route('tasks.index');
     }
 }

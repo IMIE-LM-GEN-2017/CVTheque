@@ -38,7 +38,7 @@
     {!! Form::label('Langue', 'Langues:', ['class' => 'control-label']) !!}
     {!! Form::text('langues', null, ['class' => 'form-control']) !!}
 </div>
-a
+
 {!! Form::submit('Mettre à jour le CV', ['class' => 'btn btn-primary']) !!}
 
 {!! Form::close() !!}
