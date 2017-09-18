@@ -3,7 +3,7 @@
 @section('content')
 
 <h1>Editer "{{ $task->title }}"</h1>
-<p class="lead">Modifiez et enregistrez cette tâche ci-dessous, ou <a href="{{ route('tasks.index') }}">go back to all tasks.</a></p>
+<p class="lead">Modifiez et enregistrez cette tâche ci-dessous, ou <a href="{{ route('tasks.index') }}">Revenir à la liste des taches.</a></p>
 <hr>
 
 @include('partials.alerts.errors')
@@ -14,7 +14,7 @@
 ]) !!}
 
 <div class="form-group">
-    {!! Form::label('title', 'Title:', ['class' => 'control-label']) !!}
+    {!! Form::label('title', 'Titre:', ['class' => 'control-label']) !!}
     {!! Form::text('title', null, ['class' => 'form-control']) !!}
 </div>
 
@@ -23,7 +23,7 @@
     {!! Form::textarea('description', null, ['class' => 'form-control']) !!}
 </div>
 
-{!! Form::submit('Update Task', ['class' => 'btn btn-primary']) !!}
+{!! Form::submit('Enregistrer les modification', ['class' => 'btn btn-primary']) !!}
 
 {!! Form::close() !!}
 

@@ -2,8 +2,8 @@
 
 @section('content')
 
-<h1>Editing "{{ $document->company }}"</h1>
-<p class="lead">Editer et sauvegarder le CV, ou <a href="{{ route('documents.index') }}">retournez a la liste ...</a></p>
+<h1>Editer</h1>
+<p class="lead">Editer votre CV, ou <a href="{{ route('documents.index') }}">retournez a la liste ...</a></p>
 <hr>
 
 @include('partials.alerts.errors')
@@ -38,7 +38,7 @@
     {!! Form::label('Langue', 'Langues:', ['class' => 'control-label']) !!}
     {!! Form::text('langues', null, ['class' => 'form-control']) !!}
 </div>
-
+a
 {!! Form::submit('Mettre à jour le CV', ['class' => 'btn btn-primary']) !!}
 
 {!! Form::close() !!}

@@ -16,6 +16,7 @@
   <li><a data-toggle="pill" href="#menu2">Competences</a></li>
   <li><a data-toggle="pill" href="#menu3">Experiences</a></li>
   <li><a data-toggle="pill" href="#menu4">Langues</a></li>
+  <li><a data-toggle="pill" href="#menu5">Envoyer votre CV</a></li>
 </ul>
 
 <div class="tab-content">
@@ -57,6 +58,7 @@
         {!! Form::label('Langue', 'Langues:', ['class' => 'control-label']) !!}
         {!! Form::text('langues', null, ['class' => 'form-control']) !!}
     </div>
+
   </div>
 </div>
 

@@ -1,25 +1,5 @@
-
-.ui.menu {
-    font-size: 1.4rem;
-    margin: 0px;
-
-}
-
-.ui.input.focus input, .ui.input input:focus {
-    border-color: transparent;
-}
-
-.btn-primary {
-    background-color: #1C1C1C;
-    border-color: transparent;
-    border-radius: 100rem;
-
-}
-
-.btn-primary:hover {
-    background-color: #606060;
-    border-color: transparent;
-
+.navbar-inverse{
+    margin-bottom: auto;
 }
 
 #login{
@@ -46,6 +26,7 @@
     width: 100%;
     background-size: cover;
     z-index: 1;
+
 
 }
 

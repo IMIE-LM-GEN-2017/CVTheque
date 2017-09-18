@@ -2,18 +2,22 @@
 
 @section('content')
 
-<h1>Task List</h1>
-<p class="lead">Here's a list of all your tasks. <a href="{{ route('tasks.create') }}">Add a new one?</a></p>
+
+
+<h1>Liste de tache</h1>
+<p class="lead">Voici la liste de toutes vos tâches. <a href="{{ route('tasks.create') }}">Ajouter un nouveau?</a></p>
 <hr>
+
+
 
 @foreach($tasks as $task)
     <h3>{{ $task->title }}</h3>
     <p>{{ $task->description}}</p>
     <p>
-        <a href="{{ route('tasks.show', $task->id) }}" class="btn btn-info">View Task</a>
-        <a href="{{ route('tasks.edit', $task->id) }}" class="btn btn-primary">Edit Task</a>
+        <a href="{{ route('tasks.show', $task->id) }}" class="btn btn-info">Voir</a>
+        <a href="{{ route('tasks.edit', $task->id) }}" class="btn btn-primary">Editer</a>
     </p>
     <hr>
 @endforeach
 
-@stop
+@endsection
